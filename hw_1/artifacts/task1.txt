@@ -26,6 +26,7 @@ python task1.py task1.py
     25  if __name__ == "__main__":
     26  main()
 
+
 python task1.py 
 sdfsdf
      1  sdfsdf
@@ -45,5 +46,3 @@ sdf
      8  sdf
 sd
      9  sd
-^C
-Aborted!

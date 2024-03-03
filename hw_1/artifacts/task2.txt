@@ -1,0 +1,71 @@
+python task2.py task1.py 
+        except IOError:
+            sys.exit('nl: %s: No such file or directory' % filepath)
+
+        for line in f.readlines():
+            num += 1
+            click.echo('    %2d  %s' % (num, line.strip()))
+    f.close()
+
+if __name__ == "__main__":
+    main()
+
+
+python task2.py task1.py requirements.txt 
+==> task1.py <==
+        except IOError:
+            sys.exit('nl: %s: No such file or directory' % filepath)
+
+        for line in f.readlines():
+            num += 1
+            click.echo('    %2d  %s' % (num, line.strip()))
+    f.close()
+
+if __name__ == "__main__":
+    main()
+
+==> requirements.txt <==
+click==8.1.7
+
+
+python task2.py task1.py requirements.txt1
+==> task1.py <==
+        except IOError:
+            sys.exit('nl: %s: No such file or directory' % filepath)
+
+        for line in f.readlines():
+            num += 1
+            click.echo('    %2d  %s' % (num, line.strip()))
+    f.close()
+
+if __name__ == "__main__":
+    main()
+tail: requirements.txt1: No such file or directory
+
+
+python task2.py -n 5 task1.py             
+            click.echo('    %2d  %s' % (num, line.strip()))
+    f.close()
+
+if __name__ == "__main__":
+    main()
+
+
+(venv) 20793788@cab-wsm-0042567 hw_1 % cat task1.py | python task2.py 
+    if not filepath:
+        for line in sys.stdin:
+            num += 1
+            click.echo('    %2d  %s' % (num, line.strip()))
+    else:
+        try:
+            f = open(filepath, 'r')
+        except IOError:
+            sys.exit('nl: %s: No such file or directory' % filepath)
+
+        for line in f.readlines():
+            num += 1
+            click.echo('    %2d  %s' % (num, line.strip()))
+    f.close()
+
+if __name__ == "__main__":
+    main()
