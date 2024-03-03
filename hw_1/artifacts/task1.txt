@@ -1,0 +1,49 @@
+python task1.py task1.py 
+     1  import sys
+     2  
+     3  import click
+     4  
+     5  
+     6  @click.command()
+     7  @click.argument("filepath", type=click.Path(), default="")
+     8  def main(filepath):
+     9  num = 0
+    10  
+    11  if not filepath:
+    12  for line in sys.stdin:
+    13  num += 1
+    14  click.echo('    %2d  %s' % (num, line.strip()))
+    15  else:
+    16  try:
+    17  f = open(filepath, 'r')
+    18  except IOError:
+    19  sys.exit('open: No such file or directory: \'%s\'' % filepath)
+    20  
+    21  for line in f.readlines():
+    22  num += 1
+    23  click.echo('    %2d  %s' % (num, line.strip()))
+    24  
+    25  if __name__ == "__main__":
+    26  main()
+
+python task1.py 
+sdfsdf
+     1  sdfsdf
+dasd
+     2  dasd
+asd
+     3  asd
+afs
+     4  afs
+dfs
+     5  dfs
+df
+     6  df
+df
+     7  df
+sdf
+     8  sdf
+sd
+     9  sd
+^C
+Aborted!
