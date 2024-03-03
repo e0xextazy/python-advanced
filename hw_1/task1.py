@@ -23,5 +23,6 @@ def main(filepath):
             click.echo('    %2d  %s' % (num, line.strip()))
     f.close()
 
+
 if __name__ == "__main__":
     main()

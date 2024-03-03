@@ -9,10 +9,10 @@ import click
 def main(filepaths, number):
     if not filepaths:
         cache = list()
-        
+
         for line in sys.stdin:
             cache.append(line)
-        
+
         click.echo("".join(cache[-17:]).rstrip())
     else:
         for i, filepath in enumerate(filepaths):
@@ -29,6 +29,7 @@ def main(filepaths, number):
             for line in f.readlines()[-number:]:
                 click.echo(line.rstrip())
             f.close()
+
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,30 @@
+python task3.py 
+123 123 123
+456
+       2       4      16 
+
+
+python task3.py task1.py 
+      27      65     591 task1.py
+
+
+python task3.py task1.py task2.py 
+      27      65     591 task1.py
+      34      73     898 task2.py
+      61     138    1489 total
+
+
+python task3.py task1.py task2.py2
+      27      65     591 task1.py
+wc: task2.py2: open: No such file or directory
+      27      65     591 total
+
+
+python task3.py task1.py2 task2.py
+wc: task1.py2: open: No such file or directory
+      34      73     898 task2.py
+      34      73     898 total
+
+
+cat task1.py | python task3.py 
+      27      65     591 
